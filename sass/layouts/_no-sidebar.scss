@@ -1,0 +1,36 @@
+body {
+	overflow-x: hidden;
+}
+
+
+.no-sidebar {
+
+	.site {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-areas:
+			"header"
+			"main"
+			"footer";
+	}
+}
+
+/*
+	#page - .site
+		#masthead - .site-header
+			.site-branding
+				.site-title
+				.site-description
+			#site-navigation - .main-navigation	
+		#primary - .site-main
+		#secondary -  .widget-area
+		#colophon - .site-footer
+*/
+
+.site-branding, #primary, #colophon {
+	margin-left : .5rem;
+	@include desktop {
+		margin-left : 3rem;
+	}
+}
+
