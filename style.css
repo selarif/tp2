@@ -1089,6 +1089,7 @@ menu tablet
 body.home {
   width: 100vw;
   height: 500vh;
+  background-color: #F2D1C9;
 }
 
 body.home #primary {
@@ -1110,7 +1111,7 @@ body.home::after {
   left: 0;
   right: 0;
   clip-path: polygon(100% 90%, 100% 100%, 70% 100%);
-  background-color: rgba(121, 183, 241, 0.753);
+  background-color: #758f5f;
   z-index: -1;
 }
 
@@ -1174,6 +1175,18 @@ body.home::after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-cours section.bloc article:hover {
+  background-color: #f5e6e2;
+  color: #426A5A;
+  box-shadow: none;
+}
+
+.list-cours section.bloc article:hover a, .list-cours section.bloc article:hover h4 {
+  color: #eec2b7;
+  text-shadow: none;
 }
 
 .list-cours section.bloc article {
@@ -1182,13 +1195,21 @@ body.home::after {
   justify-content: space-between;
   align-items: center;
   width: 94%;
+  height: 200px;
   margin: 1%;
-  border: 1px solid #aaa;
+  background-color: #426a5a;
+  border-radius: 40px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 20px;
+  box-shadow: -1px 32px 50px -32px rgba(0, 0, 0, 0.75);
+  transition: 0.5s all ease-in-out;
 }
 
 .list-cours section.bloc article p {
   font-size: .7rem;
   font-weight: bold;
+  padding-top: 20px;
 }
 
 .list-cours section.bloc article a {

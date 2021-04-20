@@ -4,4 +4,4 @@
 
 L'exercice porte sur la galerie des projets étudiants
 
-## Lien WebDev : e1836741.webdev.cmaisonneuve.qc.ca/ ##
+## Lien WebDev : https://e1836741.webdev.cmaisonneuve.qc.ca/4w4/ ##
