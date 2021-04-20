@@ -711,7 +711,7 @@ body {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #000;
+  background-color: #721817;
   text-align: left;
   left: 0;
   /* sub-menu */
@@ -757,10 +757,16 @@ body {
   flex: 1;
 }
 
+.main-navigation a:hover {
+  background-color: #380f0e;
+}
+
 .main-navigation a {
   display: block;
   text-decoration: none;
-  padding: .5rem;
+  padding: .8rem;
+  text-align: center;
+  transition: all 0.5s;
 }
 
 /* fin de main-navigation */
@@ -820,6 +826,7 @@ menu tablet
     justify-content: flex-start;
     width: 300px;
     animation: anim-sous-menu 0.5s both cubic-bezier(0, 1.38, 1, 1);
+    border-radius: 2px 2px 30px 30px;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
@@ -1169,6 +1176,8 @@ body.home::after {
 
 .list-cours h2 {
   text-align: center;
+  font-size: 2.3rem;
+  color: #155029;
 }
 
 .list-cours section.bloc {
@@ -1195,7 +1204,7 @@ body.home::after {
   justify-content: space-between;
   align-items: center;
   width: 94%;
-  height: 200px;
+  height: 230px;
   margin: 1%;
   background-color: #426a5a;
   border-radius: 40px;
@@ -1212,11 +1221,22 @@ body.home::after {
   padding-top: 20px;
 }
 
+.list-cours section.bloc article p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
 .list-cours section.bloc article a {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  padding: 10px;
+  color: #BAD1CD;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.list-cours section.bloc article h4 {
+  color: #153B50;
 }
 
 @media (min-width: 800px) {
@@ -1299,16 +1319,35 @@ body.home::after {
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info p {
-  font-size: .8rem;
+  font-size: .7rem;
+  font-weight: bold;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: #f0dbb5;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.carrousel-2 .slide__conteneur .slide .slide__info h4 {
+  color: #153B50;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #be4343;
+  background-color: #b9b71b;
+  transition: all 0.5s;
+}
+
+.carrousel-2 .slide__conteneur .slide:nth-of-type(1):hover {
+  background-color: #d3d15a;
+}
+
+.carrousel-2 .slide__conteneur .slide:nth-of-type(1):hover a {
+  text-shadow: none;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
@@ -1502,6 +1541,7 @@ Animation de la dtroisième  barre bar3
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 50px;
 }
 
 .galerie .flip-card-front {

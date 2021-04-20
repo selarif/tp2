@@ -84,6 +84,8 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     
     h2{
         text-align: center;
+        font-size: 2.3rem;
+        color: #155029;
     }
 
     section.bloc {
@@ -106,7 +108,7 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
             justify-content: space-between;
             align-items: center;
             width : 94%;
-            height: 200px;
+            height: 230px;
             margin : 1%;
             background-color: #426a5a;
             border-radius : 40px;
@@ -121,11 +123,20 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
                 font-weight: bold;
                 padding-top: 20px;
             }
+            p:nth-of-type(2){
+                padding-bottom: 20px;
+            }
             a{ // -- Titre des cours
                 font-size: 1.5rem;
                 font-weight: bold;
                 text-decoration : none;
                 text-align: center;
+                padding: 10px;
+                color : #BAD1CD;
+                text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
+            }
+            h4{ 
+                color: #153B50;
             }
         } // fin article
 

@@ -9,7 +9,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: #000;
+		background-color:#721817;
 		text-align : left;
 		left : 0;
 
@@ -28,18 +28,18 @@
 		} /* sub-menu */
 
 		li:hover > ul,
-		li.focus > ul {
+		li.focus > ul {// ---cela fait apparaitre le sous menu
 			left: 0;
 		} 
 
-		li > a[href="#"]::after {
+		li > a[href="#"]::after { // on cherche le a qui est dans le li, et on ajoute un +
 			content : "+";
 			position : absolute;
 			width : 100%;
 			height: 100%;
 			top:0;
 			bottom: 0;
-			left:90%;
+			left:90%; // se tasse vers la droite de 90%
 			right:0;
 		}
 		li.focus > a[href="#"]::after,
@@ -60,11 +60,17 @@
 	
 
 	}
-
+	a:hover {
+		background-color: #380f0e;
+		
+	}
 	a {
 		display: block;
 		text-decoration: none;
-		padding: .5rem;
+		padding: .8rem;
+		text-align: center;
+		transition: all 0.5s;
+
 	}
 
 	.current_page_item > a,
@@ -129,7 +135,7 @@ menu tablet
 			justify-content: flex-start;
 			width : 300px;
 			animation: anim-sous-menu .5s both cubic-bezier(0,1.38,1,1); // -- Both permet de garder l'etat final de anim-sous-menu permanent
-			
+			border-radius: 2px 2px 30px 30px;
 		}
 
 		ul {

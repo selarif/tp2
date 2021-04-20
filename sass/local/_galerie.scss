@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-right : 3%;
+    
     .flip-card {
         margin : 2%;
         background-color: transparent;
@@ -31,6 +32,7 @@
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        border-radius: 50px;
     }
     
     .flip-card-front {

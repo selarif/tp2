@@ -31,15 +31,33 @@
                 align-items: center;
                 text-align: center;
                 p{
-                    font-size: .8rem;
+                    font-size: .7rem;
+                    font-weight: bold;
                 }
-                a {
+                a { /// Titre des cours
                     font-size: 1.5rem;
-                    text-decoration: none;
-                }            
+                    font-weight: bold;
+                    text-decoration : none;
+                    text-align: center;
+                    padding: 10px;
+                    color : rgb(240, 219, 181);
+                    text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
+                }
+                
+                
+                h4{ 
+                    color: #153B50;
+                }        
             }
             &:nth-of-type(1){
-                background-color: rgb(190, 67, 67);
+                background-color: rgb(185, 183, 27);
+                transition: all 0.5s;
+            }
+            &:nth-of-type(1):hover{
+                background-color: rgb(211, 209, 90);
+                a{
+                    text-shadow: none;
+                }
             }
             &:nth-of-type(2){
                 background-color: rgb(77, 190, 67);
