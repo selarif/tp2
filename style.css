@@ -1259,7 +1259,7 @@ body.home::after {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-radius: 40px;
 }
 
@@ -1274,6 +1274,7 @@ body.home::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info p {
@@ -1442,5 +1443,95 @@ Animation de la dtroisième  barre bar3
 
 .fermeX3 {
   animation: fermeX3 0.25s both;
+}
+
+/* Local/burger
+--------------------------------------------- */
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 3%;
+}
+
+.galerie .flip-card {
+  margin: 2%;
+  background-color: transparent;
+  width: 150px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.galerie .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.galerie .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.galerie .flip-card-front, .galerie .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.galerie .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.galerie .flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Local/page
+--------------------------------------------- */
+.site-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.9rem, -0.875rem + 5.333vw, 2.5rem);
+  font-weight: bold;
+  color: #003;
+  margin-bottom: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
+  font-weight: normal;
+  color: #003;
+  margin-top: 0;
+}
+
+.page-header {
+  margin-top: 90px;
+}
+
+.page-header .page-title {
+  font-size: 4rem;
+  color: #153B50;
+  margin-bottom: 0;
+}
+
+.page-header .archive-description {
+  font-size: 1rem;
+  color: #155041;
+}
+
+.page-header .archive-description p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

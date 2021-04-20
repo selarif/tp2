@@ -20,9 +20,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(is_front_page() && is_home() ? 'no-sidebar': '' ); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page" class="site"> 
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'theme4w4ed' ); ?></a>
 
 	<header id="masthead" class="site-header">
