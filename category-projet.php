@@ -27,7 +27,7 @@ get_header();
 			while ( have_posts() ) :
 				the_post(); ?>
 				<div>
-				<a href="<?php echo get_permalink();"></a><?php the_post_thumbnail('thumbnail'); ?>
+				<a href="<?php echo get_permalink();?>"></a><?php the_post_thumbnail('thumbnail'); ?>
 				
 				</div>
 				<?php endwhile; ?>
@@ -40,3 +40,4 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+?>
