@@ -1340,6 +1340,7 @@ body.home::after {
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
   background-color: #b9b71b;
   transition: all 0.5s;
+  margin-bottom: 5vh;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1):hover {
@@ -1366,6 +1367,7 @@ body.home::after {
   align-items: center;
   background-color: #BAD1CD;
   color: #775e88;
+  margin-top: 2vh;
 }
 
 .ctrl-carrousel input {

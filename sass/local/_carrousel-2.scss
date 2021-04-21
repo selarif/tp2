@@ -52,6 +52,7 @@
             &:nth-of-type(1){
                 background-color: rgb(185, 183, 27);
                 transition: all 0.5s;
+                margin-bottom: 5vh;
             }
             &:nth-of-type(1):hover{
                 background-color: rgb(211, 209, 90);
@@ -79,6 +80,7 @@
     align-items: center;
     background-color: #BAD1CD;
     color: #775e88;
+    margin-top:2vh;
     input {
         margin: 2rem;
         &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3){
