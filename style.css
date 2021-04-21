@@ -1510,15 +1510,34 @@ Animation de la dtroisième  barre bar3
 .galerie {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   margin-right: 3%;
+  /*
+    article{
+        transform-origin: 50% 50%;
+        margin:1%;
+
+        a{
+            display: block;
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+        img{
+            border-radius: 5px;
+            /*width: 250px;
+            height: 250px;
+            display: block;;
+        }
+    }*/
 }
 
 .galerie .flip-card {
   margin: 2%;
   background-color: transparent;
   width: 150px;
-  height: 300px;
+  height: 150px;
   perspective: 1000px;
 }
 
@@ -1541,7 +1560,6 @@ Animation de la dtroisième  barre bar3
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 50px;
 }
 
 .galerie .flip-card-front {
@@ -1553,6 +1571,8 @@ Animation de la dtroisième  barre bar3
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  height: 150px;
+  width: 150px;
 }
 
 /* Local/page
@@ -1585,6 +1605,9 @@ Animation de la dtroisième  barre bar3
   font-size: 4rem;
   color: #153B50;
   margin-bottom: 0;
+  animation-name: slider;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 .page-header .archive-description {
@@ -1594,5 +1617,18 @@ Animation de la dtroisième  barre bar3
 
 .page-header .archive-description p {
   margin: 0;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(-100%);
+    animation-timing-function: cubic-bezier(0, 1.04, 0.72, 1.01);
+    text-shadow: none;
+  }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0.81);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
+  }
 }
 /*# sourceMappingURL=style.css.map */

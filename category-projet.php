@@ -22,16 +22,16 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
-	<section class="galerie">
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post(); ?>
-				<div>
-				<a href="<?php echo get_permalink();?>"></a><?php the_post_thumbnail('thumbnail'); ?>
-				
-				</div>
-				<?php endwhile; ?>
+			<section class="galerie">
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post(); ?>
+					<!-- <div> -->
+					<!-- <a href="<?php //echo get_permalink();?>"></a><?php //the_post_thumbnail('thumbnail'); ?> -->
+					<?php get_template_part( 'template-parts/content', 'galerie'); ?>
+					<!-- </div> -->
+					<?php endwhile; ?>
 			</section>
 		<?php endif; ?>
 		

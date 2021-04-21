@@ -25,6 +25,10 @@
         font-size: 4rem;
         color: #153B50;
         margin-bottom: 0;
+        // L'animation
+        animation-name: slider;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
     }
     .archive-description{
         font-size: 1rem;
@@ -32,5 +36,19 @@
         p{
             margin: 0;
         }
+    }
+}
+
+// L'animation du titre Archives 
+@keyframes slider{
+    0%{
+        transform: translateX(-100%);
+        animation-timing-function: cubic-bezier(0,1.04,.72,1.01); 
+        text-shadow: none;
+    }
+    100%{ 
+        transform: translateX(0px);
+        animation-timing-function: cubic-bezier(1,0,1,.81);
+        text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
     }
 }
