@@ -1360,12 +1360,23 @@ body.home::after {
 
 .ctrl-carrousel {
   width: 100vw;
+  height: 5vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #BAD1CD;
+  color: #775e88;
 }
 
 .ctrl-carrousel input {
   margin: 2rem;
+}
+
+.ctrl-carrousel input:nth-of-type(1), .ctrl-carrousel input:nth-of-type(2), .ctrl-carrousel input:nth-of-type(3) {
+  color: #775e88;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
 }
 
 .ctrl-carrousel input:nth-of-type(4) {
@@ -1524,13 +1535,13 @@ Animation de la dtroisième  barre bar3
             width: 150px;
             height: 150px;
         }
-        img{
-            border-radius: 5px;
-            /*width: 250px;
-            height: 250px;
-            display: block;;
-        }
+        
     }*/
+}
+
+.galerie img {
+  border-radius: 5px;
+  display: block;
 }
 
 .galerie .flip-card {
@@ -1571,8 +1582,15 @@ Animation de la dtroisième  barre bar3
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  margin-top: -150px;
   height: 150px;
   width: 150px;
+  border-radius: 5px;
+}
+
+.galerie .flip-card-back a {
+  color: #d4d2be;
+  font-style: italic;
 }
 
 /* Local/page

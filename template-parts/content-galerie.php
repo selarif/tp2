@@ -14,9 +14,9 @@
         <div class="flip-cart-front">
             <?php the_post_thumbnail( 'thumbnail' ); ?>
         </div>
-        
+
         <div class="flip-card-back"> <!-- Sera affiche en arriere. pcq les deux (front et back) sont en absolutes -->
-            <h1><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h1>
+            <h6><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h6>
         </div>
     </div>
 </article>

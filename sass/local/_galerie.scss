@@ -5,6 +5,10 @@
     justify-content: space-around;
     margin-right : 3%;
 
+    img{
+        border-radius: 5px;
+        display: block;
+    }
     .flip-card {
         margin : 2%;
         background-color: transparent;
@@ -49,8 +53,14 @@
         color: white;
         transform: rotateY(180deg); /// Permet de mettre a l'endroit le texte, sinon il serait a l'envers a cause du premier 180deg
 
+        margin-top: -150px; /// sinon ca s'affiche en dessous de l'image 
         height: 150px;
         width: 150px;
+        border-radius: 5px;
+        a{
+            color: rgb(212, 210, 190) ;
+            font-style: italic;
+        }
     }
 
 
@@ -65,11 +75,6 @@
             width: 150px;
             height: 150px;
         }
-        img{
-            border-radius: 5px;
-            /*width: 250px;
-            height: 250px;
-            display: block;;
-        }
+        
     }*/
 }

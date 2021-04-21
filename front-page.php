@@ -39,7 +39,7 @@ get_header();
 								?> 
 							</section>
 						<?php endif;?>
-						<h2><?php echo $tPropriété['typeCours'] /// -- Quand c'est Web, Jeu ou Spécifique ajoute le carrousel, sinon ('?'), ajoute la classe bloc (permet d'avoir plus de contrôle sur le css)?></h2>
+						<h2><?php echo $tPropriété['typeCours'] /// Quand c'est Web, Jeu ou Spécifique ajoute le carrousel, sinon ('?'), ajoute la classe bloc (permet d'avoir plus de contrôle sur le css)?></h2>
 						<section <?php echo (in_array($tPropriété['typeCours'], ['Web','Jeu','Spécifique']) ? 'class="carrousel-2"' : 'class="bloc"');  ?>>
 					<?php endif;?>	
 					<?php 
