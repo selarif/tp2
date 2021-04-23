@@ -1,0 +1,14 @@
+.site-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #273f35;
+    color: #bbd3c9;
+    width: 100vw;
+
+    .ligne-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

@@ -1,9 +1,13 @@
+/*
+* La différence en ce fichier et le _sidebar-content est dans le grid où il y a ce symbole : **
+*
+*/
 .site {
 	display: grid;
 	grid-template-columns: 80% 20%;
 	grid-template-areas:
 		"header header"
-		"main sidebar"
+		"main sidebar" // ** C'est ici que il y a une différence avec _sidebar-content
 		"footer footer";
 }
 

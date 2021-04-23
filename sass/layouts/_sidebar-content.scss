@@ -1,10 +1,14 @@
+/*
+* La différence en ce fichier et le _content-sidebar est dans le grid où il y a ce symbole : **
+*
+*/
 .site {
 	display: grid;
 	//grid-template-columns: ($size__site-sidebar) auto;
 	grid-template-columns: 20% 80%;
 	grid-template-areas:
 		"header header"
-		"sidebar main"
+		"sidebar main" // ** C'est ici que il y a une différence avec _content-sidebar
 		"footer footer";
 }
 

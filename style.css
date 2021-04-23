@@ -1651,4 +1651,21 @@ Animation de la dtroisième  barre bar3
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
   }
 }
+
+/* Local/page
+--------------------------------------------- */
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #273f35;
+  color: #bbd3c9;
+  width: 100vw;
+}
+
+.site-footer .ligne-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /*# sourceMappingURL=style.css.map */

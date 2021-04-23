@@ -133,7 +133,32 @@ function theme4w4ed_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Pied de page', 'theme4w4ed' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'theme4w4ed' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Pied de page 2', 'theme4w4ed' ),
+			'id'            => 'footer-2',
+			'description'   => esc_html__( 'Add widgets here.', 'theme4w4ed' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
+/// Equivalent au add.EventListener . C'est un hook
 add_action( 'widgets_init', 'theme4w4ed_widgets_init' );
 
 /**

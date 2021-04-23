@@ -12,19 +12,20 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://cmaisonneuve.qc.ca', 'Collège de Maisonneuve' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				// printf( esc_html__( 'Proudly powered by %s', 'theme4w4ed' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				 printf( esc_html__( 'Theme: %1$s by %2$s.', 'theme4w4ed' ), 'theme4w4ed', '<a href="http://referenced.ca">Eddy martin</a>' );
-				?>
-		</div><!-- .site-info -->
+	<div class="ligne-footer">
+		<?php if (is_active_sidebar( 'footer-1')) : ?>
+			<?php dynamic_sidebar( 'footer-1' )?>
+		<?php endif ?>	
+	</div>
+
+	<div  class="ligne-footer">
+		<?php if (is_active_sidebar( 'footer-2')) : ?>
+			<?php dynamic_sidebar( 'footer-2' )?>
+		<?php endif ?>	
+	</div>
+		
+		
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
