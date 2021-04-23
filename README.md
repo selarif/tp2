@@ -2,6 +2,7 @@
 ## Auteur : Sami El Arif ##
 ## Description ##
 
-L'exercice porte sur la galerie des projets étudiants
+Configuration des images en avant plan, ajout de zone pour l’intégration de widget. Contrôle du layout.
+
 
 ## Lien WebDev : https://e1836741.webdev.cmaisonneuve.qc.ca/4w4/ ##

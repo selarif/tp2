@@ -40,12 +40,14 @@ get_header();
 							</section>
 						<?php endif;?>
 						<h2><?php echo $tPropriété['typeCours'] /// Quand c'est Web, Jeu ou Spécifique ajoute le carrousel, sinon ('?'), ajoute la classe bloc (permet d'avoir plus de contrôle sur le css)?></h2>
-						<section <?php echo (in_array($tPropriété['typeCours'], ['Web','Jeu','Spécifique']) ? 'class="carrousel-2"' : 'class="bloc"');  ?>>
+						<section <?php echo class_composant($tPropriété['typeCours']) ?>>
 					<?php endif;?>	
 					<?php 
 					if (in_array($tPropriété['typeCours'], ['Web','Jeu','Spécifique'])): /// Si typeCours est Web ou Jeu alors mets le carrousel
 						get_template_part( 'template-parts/content', 'carrousel' ); /// Charge le fichier nommé 'content-carrousel' avec comme préfixe 'content' et suffixe 'carrousel' dans le dossier template-parts dans wp-content
 						$ctrl_radio .= '<input type="radio" name="rad-'. $tPropriété['typeCours'] .'">'; /// On met .$tPropriété['typeCours']. pour dissocier les boutons entre Jeu et Web et Spécifique
+						elseif ($tPropriété['typeCours'] == 'Projets'):
+							get_template_part( 'template-parts/content', 'galerie' ); /// Charge le fichier nommé 'content-galerie' avec comme préfixe 'content' et suffixe 'galerie' dans le dossier template-parts dans wp-content
 					 else:
 						get_template_part( 'template-parts/content', 'bloc' );
 					endif; 
@@ -68,4 +70,18 @@ function convertir_tableau(&$tPropriété){ /// Tableau associatif
 	$tPropriété['titre'] = substr($titre_grand,8, -6); /// On cherche le nom du cours et seulement ça, sans le sigle et nb d'heures
 	$tPropriété['sigle'] = substr($titre_grand,0, 7);
 	$tPropriété['typeCours'] = get_field('type_de_cours'); 
+}
+
+
+function class_composant($typeCours){
+	if(in_array($tPropriété['typeCours'], ['Web','Jeu','Spécifique'])){
+		return 'class="carrousel"';
+	}
+	elseif($typeCours == 'Projets'){
+		return 'class="galerie"';
+	}
+	else {
+		return 'class="bloc"';
+	}
+	
 }
