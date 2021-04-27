@@ -133,7 +133,7 @@ function theme4w4ed_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
-
+ 
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Pied de page', 'theme4w4ed' ),
@@ -184,13 +184,16 @@ function theme4w4ed_scripts() {
 	wp_enqueue_script( 'theme4w4ed-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'theme4w4ed-burger', get_template_directory_uri() . '/js/burger.js', array(), _S_VERSION, true );
 
+	/// WP Register implémente le code sans l'activer tout de suite
 	wp_register_script('theme4w4ed-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), _S_VERSION, true );
 	wp_register_script('theme4w4ed-carrousel-2', get_template_directory_uri() . '/js/carrousel-2.js', array(), _S_VERSION, true );
-	
+	wp_register_script('theme4w4ed-api-rest', get_template_directory_uri() . '/js/api-rest', array(), filemtime(get_template_directory(). "/js/api-rest.js"), true );
 
-	if ( is_front_page()) { /// Ajoute le script de carrousel seulement si on est dans la page d'acceuil
+
+	if ( is_front_page()) { /// Ajoute le script de carrousel et api-rest seulement si on est dans la page d'acceuil
 		wp_enqueue_script( 'theme4w4ed-carrousel' );
 		wp_enqueue_script( 'theme4w4ed-carrousel-2' );
+		wp_enqueue_script( 'theme4w4ed-api-rest' );
 	}
 
 

@@ -1251,6 +1251,12 @@ body.home::after {
   }
 }
 
+.home .nouvelles {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 4% 2% 2%;
+}
+
 /* Local/carrousel
 --------------------------------------------- */
 .carrousel {

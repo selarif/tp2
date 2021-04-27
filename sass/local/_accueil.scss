@@ -95,7 +95,7 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         justify-content: center;
         article:hover{ // Quand on hover sur les cases de cours
             background-color: #f5e6e2;
-            color: #426A5A;
+            color: #426A5A; 
             box-shadow: none;
             a,h4{
                 color: #eec2b7;
@@ -156,4 +156,14 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
      }
 }
 
+.home .nouvelles{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 4% 2% 2%;
 
+    section{
+        h2{
+            
+        }
+    }
+}

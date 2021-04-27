@@ -4,7 +4,7 @@
     let bar2 = document.querySelector('#burger div:nth-of-type(2)')
     let bar3 = document.querySelector('#burger div:nth-of-type(3)')
     let burger = document.getElementById('burger')
-    console.log(burger.id)
+    //console.log(burger.id)
     burger.addEventListener('mousedown', function(){
         console.log(burger.id)
         if (bar1.classList.contains('ouvrirX1') == false){ /// si il n'y a pas déjà l'animation d'ouverture...
