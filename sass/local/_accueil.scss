@@ -159,10 +159,24 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
 .home .nouvelles{
     display: flex;
     flex-direction: column;
-    margin: 2% 4% 2% 2%;
+    margin: 3% 4% 3% 2%;
+
+    #bout_nouvelles {
+        background-color: #89b6db;
+        color: #ffffff;
+        font-size: 1.3rem;
+        
+    }
 
     section{
-        h2{
+        
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100vw;
+            margin-left: 5%;
+            margin-right: 5%;
             
         }
     }
