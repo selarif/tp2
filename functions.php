@@ -191,9 +191,13 @@ function theme4w4ed_scripts() {
 
 
 	if ( is_front_page()) { /// Ajoute le script de carrousel et api-rest seulement si on est dans la page d'acceuil
-		wp_enqueue_script( 'theme4w4ed-carrousel' );
+	//	wp_enqueue_script( 'theme4w4ed-carrousel' );
 		wp_enqueue_script( 'theme4w4ed-carrousel-2' );
 		wp_enqueue_script( 'theme4w4ed-api-rest' );
+		wp_localize_script( 'theme4w4ed-api-rest', 'monObjJS', array(
+			'nonce' => wp_create_nonce( 'wp_reset' ), /// Tableau Associatif
+			'siteURL' => get_site_url()) /// Va chercher l'URL du site qui va rentrer dans la variable 'monObjJS'
+		);
 	}
 
 

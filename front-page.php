@@ -55,6 +55,14 @@ get_header();
 				endwhile; ?>
 			</section>
 		<?php endif; ?>
+
+			<section class="admin-rapide">
+				<h3>Ajouter une article de catégorie "Nouvelles"</h3>
+				<input type="text" name="title" placeholder="Titre">
+				<textarea name="content"></textarea>
+				<button id="bout-rapide">Créer une nouvelle</button>
+			</section>
+
 			<section class="nouvelles">
 				<button id="bout_nouvelles">Afficher les 3 dernières nouvelles</button>
 				<section></section>
@@ -77,8 +85,8 @@ function convertir_tableau(&$tPropriété){ /// Tableau associatif
 
 
 function class_composant($typeCours){
-	if(in_array($tPropriété['typeCours'], ['Web','Jeu','Spécifique'])){
-		return 'class="carrousel"';
+	if(in_array($typeCours, ['Web','Jeu','Spécifique'])){ /// On verifie si type cours = jeu, 
+		return 'class="carrousel-2"';
 	}
 	elseif($typeCours == 'Projets'){
 		return 'class="galerie"';
