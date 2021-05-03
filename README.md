@@ -1,8 +1,8 @@
-# Labo 8 #
+# Exercice 4 #
 ## Auteur : Sami El Arif ##
 ## Description ##
 
-Utilisation du module API REST afin d'afficher les 3 dernières nouvelles dans la page d'accueil
+Configuration des images en avant plan, ajout de zone pour l’intégration de widget. Contrôle du layout.
 
 
 ## Lien WebDev : https://e1836741.webdev.cmaisonneuve.qc.ca/4w4/ ##
