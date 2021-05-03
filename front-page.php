@@ -47,6 +47,7 @@ get_header();
 						get_template_part( 'template-parts/content', 'carrousel' ); /// Charge le fichier nommé 'content-carrousel' avec comme préfixe 'content' et suffixe 'carrousel' dans le dossier template-parts dans wp-content
 						$ctrl_radio .= '<input type="radio" name="rad-'. $tPropriété['typeCours'] .'">'; /// On met .$tPropriété['typeCours']. pour dissocier les boutons entre Jeu et Web et Spécifique
 						elseif ($tPropriété['typeCours'] == 'Projets'):
+							/// Affiche les images de projets sur la page d'Acceuil
 							get_template_part( 'template-parts/content', 'galerie' ); /// Charge le fichier nommé 'content-galerie' avec comme préfixe 'content' et suffixe 'galerie' dans le dossier template-parts dans wp-content
 					 else:
 						get_template_part( 'template-parts/content', 'bloc' );
@@ -85,7 +86,7 @@ function convertir_tableau(&$tPropriété){ /// Tableau associatif
 
 
 function class_composant($typeCours){
-	if(in_array($typeCours, ['Web','Jeu','Spécifique'])){ /// On verifie si type cours = jeu, 
+	if(in_array($typeCours, ['Web','Jeu','Spécifique'])){ /// On vérifie si type cours = jeu, web ou spécifique
 		return 'class="carrousel-2"';
 	}
 	elseif($typeCours == 'Projets'){
