@@ -1180,23 +1180,6 @@ body.home::after {
   font-size: clamp(0.8rem, -0.875rem + 8.333vw, 3rem);
 }
 
-/*
-.accueil{
-
-    font-size: clamp(.8rem, -0.875rem + 8.333vw, 2rem);
-    ul{
-        list-style-type: none;
-    }
-
-    img{
-        display : block;
-        border-radius : 50%;
-        border : 1px solid #003
-     
-    }
-}
-
-*/
 .list-cours {
   display: flex;
   flex-direction: column;
@@ -1412,6 +1395,50 @@ body.home::after {
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(3) {
   background-color: #435abe;
+}
+
+.carrousel-2:nth-of-type(1) .slide__conteneur .slide .slide__info a {
+  color: #F1FAEE;
+}
+
+.carrousel-2:nth-of-type(1) .slide__conteneur .slide .slide__info p {
+  color: #457B9D;
+}
+
+.carrousel-2:nth-of-type(1) .slide__conteneur .slide:nth-of-type(1) {
+  background-color: #2b3a4e;
+  transition: all 0.5s;
+  margin-bottom: 5vh;
+}
+
+.carrousel-2:nth-of-type(1) .slide__conteneur .slide:nth-of-type(1):hover {
+  background-color: #465b77;
+}
+
+.carrousel-2:nth-of-type(1) .slide__conteneur .slide:nth-of-type(1):hover a {
+  text-shadow: none;
+  color: #ffffff;
+}
+
+.carrousel-2:nth-of-type(6) .slide__conteneur .slide .slide__info a {
+  color: #f3dbdc;
+}
+
+.carrousel-2:nth-of-type(6) .slide__conteneur .slide .slide__info p {
+  color: #f1c1a7;
+}
+
+.carrousel-2:nth-of-type(6) .slide__conteneur .slide:nth-of-type(1) {
+  background-color: #B56576;
+}
+
+.carrousel-2:nth-of-type(6) .slide__conteneur .slide:nth-of-type(1):hover {
+  background-color: #cf8394;
+}
+
+.carrousel-2:nth-of-type(6) .slide__conteneur .slide:nth-of-type(1):hover a {
+  text-shadow: none;
+  color: #faeeef;
 }
 
 .ctrl-carrousel {
@@ -1710,7 +1737,7 @@ Animation de la dtroisième  barre bar3
   margin-top: 50px;
   margin-left: 5%;
   width: 90%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
 
 .entry-header, .page-title {
@@ -1719,6 +1746,10 @@ Animation de la dtroisième  barre bar3
 
 .archive-description, .entry-content {
   margin-left: 3%;
+}
+
+.entry-footer {
+  display: none;
 }
 
 @keyframes slider {

@@ -58,7 +58,7 @@
         margin-top: 50px;
         margin-left : 5%;  
         width: 90%;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
 }
 /// Les titres tels que 350-5N1 Communication et dynamique d’une équipe de travail (45h), Projets, etc
@@ -68,6 +68,11 @@
 
 .archive-description, .entry-content { /// Description des articles de projets, cours, etc. Exemple : Quelques projets de nos étudiants en technique d'intégration multimédia au Collège de Maisonneuve
     margin-left: 3%
+}
+
+/// Pour enlever le "Posted in Cours, Imagerie 2d/3d
+.entry-footer {
+    display: none;
 }
 
 // L'animation du titre Archives 

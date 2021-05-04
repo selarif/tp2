@@ -60,23 +60,6 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 3rem);
 }
 
-/*
-.accueil{
-
-    font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 2rem);
-    ul{
-        list-style-type: none;
-    }
-
-    img{
-        display : block;
-        border-radius : 50%;
-        border : 1px solid #003
-     
-    }
-}
-
-*/   
 
 .list-cours{
     display:flex;

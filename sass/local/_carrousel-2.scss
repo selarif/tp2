@@ -4,7 +4,7 @@
     height : 30vh;
     transition : transform .5s;
     flex-wrap: nowrap;
-    .slide__conteneur {
+    .slide__conteneur{
         width : 50vw;
         display : flex;
         align-items: center;
@@ -71,6 +71,62 @@
 
     }
 }    
+/// BLOC DE WEB
+.carrousel-2:nth-of-type(1) {
+    .slide__conteneur{
+      .slide{
+            .slide__info{
+                a { /// Titre des cours
+                    color: #F1FAEE;
+                }  
+                p{
+                    color : #457B9D;
+                }       
+            }
+            &:nth-of-type(1){
+                background-color: #2b3a4e;
+                transition: all 0.5s;
+                margin-bottom: 5vh;
+            }
+            &:nth-of-type(1):hover{
+                background-color: #465b77;
+                a{
+                    text-shadow: none;
+                    color: #ffffff;
+                }
+            }
+
+        } // fin du div
+
+    }
+} 
+/// BLOC DE JEU
+.carrousel-2:nth-of-type(6) {
+    .slide__conteneur{
+      .slide{
+            .slide__info{
+                a { /// Titre des cours
+                    color: #f3dbdc;
+                }  
+                p{
+                    color : #f1c1a7;
+                }       
+            }
+            &:nth-of-type(1){
+                background-color: #B56576;
+            }
+            &:nth-of-type(1):hover{
+                background-color: #cf8394;
+                a{
+                    text-shadow: none;
+                    color: #faeeef;
+                }
+            }
+
+        } // fin du div
+
+    }
+} 
 
 .ctrl-carrousel {
     width : 100vw;
