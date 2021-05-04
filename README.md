@@ -1,8 +1,8 @@
-# Exercice 4 #
+# Travail Pratique 2 #
 ## Auteur : Sami El Arif ##
 ## Description ##
 
-Configuration des images en avant plan, ajout de zone pour l’intégration de widget. Contrôle du layout.
+L'aboutissemnt du développement d'un site WordPress fait en 14 semaines.
 
 
 ## Lien WebDev : https://e1836741.webdev.cmaisonneuve.qc.ca/4w4/ ##

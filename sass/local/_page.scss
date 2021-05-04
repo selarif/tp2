@@ -1,4 +1,7 @@
 /// Formatte TOUTES les pages
+.site {
+    background-color: #F2D1C9;
+}
 .site-title{
     font-family: $font__title;
     font-size: clamp(.9rem, #{"-0.875rem + 5.333vw"}, 2.5rem);
@@ -20,7 +23,7 @@
 }
 
 .page-header, .entry-header{
-    margin-top: 130px;
+    margin-top: 10px;
 
     .page-title, .entry-title{
         font-size: 4rem;
@@ -39,6 +42,15 @@
         }
         
     }
+}
+
+/// Les titres tels que 350-5N1 Communication et dynamique d’une équipe de travail (45h), Projets, etc
+.entry-header, .page-title{
+    margin-left: 5%
+}
+
+.archive-description, .entry-content { /// Description des articles de projets, cours, etc. Exemple : Quelques projets de nos étudiants en technique d'intégration multimédia au Collège de Maisonneuve
+    margin-left: 3%
 }
 
 // L'animation du titre Archives 

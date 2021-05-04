@@ -681,7 +681,7 @@ textarea {
 
 .site-header {
   grid-area: header;
-  height: 25vh;
+  height: 33vh;
 }
 
 .site-main {
@@ -692,7 +692,8 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
-  background-color: rosybrown;
+  background-color: #6a8f7c;
+  color: #bbd8c9;
 }
 
 .site-footer {
@@ -720,10 +721,6 @@ body {
 		#secondary -  .widget-area
 		#colophon - .site-footer
 */
-.site-branding, #primary, #colophon {
-  margin-left: .5rem;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1649,6 +1646,10 @@ Animation de la dtroisième  barre bar3
 
 /* Local/page
 --------------------------------------------- */
+.site {
+  background-color: #F2D1C9;
+}
+
 .site-title {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(0.9rem, -0.875rem + 5.333vw, 2.5rem);
@@ -1670,7 +1671,7 @@ Animation de la dtroisième  barre bar3
 }
 
 .page-header, .entry-header {
-  margin-top: 130px;
+  margin-top: 10px;
 }
 
 .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
@@ -1689,6 +1690,14 @@ Animation de la dtroisième  barre bar3
 
 .page-header .archive-description p, .entry-header .archive-description p {
   margin: 0;
+}
+
+.entry-header, .page-title {
+  margin-left: 5%;
+}
+
+.archive-description, .entry-content {
+  margin-left: 3%;
 }
 
 @keyframes slider {
@@ -1712,6 +1721,7 @@ Animation de la dtroisième  barre bar3
   background-color: #273f35;
   color: #bbd3c9;
   width: 100vw;
+  margin-left: 0;
 }
 
 .site-footer .ligne-footer {
@@ -1732,5 +1742,6 @@ Animation de la dtroisième  barre bar3
 --------------------------------------------- */
 #secondary {
   padding-left: 4%;
+  padding-top: 5%;
 }
 /*# sourceMappingURL=style.css.map */

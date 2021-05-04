@@ -24,7 +24,7 @@
 
 .site-header {
 	grid-area: header;
-	height : 25vh;
+	height : 33vh;
 }
 
 .site-main {
@@ -34,7 +34,9 @@
 
 .widget-area {
 	grid-area: sidebar;
-	background-color: rosybrown;
+	background-color: #6a8f7c;
+	color: #bbd8c9;
+	
 }
 
 .site-footer {
