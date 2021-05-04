@@ -25,8 +25,11 @@
 .page-header, .entry-header{
     margin-top: 10px;
 
-    .page-title, .entry-title{
+    .page-title{
         font-size: 4rem;
+    }
+    .page-title, .entry-title{
+        
         color: #153B50;
         margin-bottom: 0;
         // L'animation
@@ -44,9 +47,23 @@
     }
 }
 
+/// Titres des cours dans leurs pages respectives
+.entry-title{
+    font-size: 3rem;
+    margin-top: 70px;
+}
+/// Textes qui décrivent les cours dans leurs pages respectives 
+.entry-content{
+    p{
+        margin-top: 50px;
+        margin-left : 5%;  
+        width: 90%;
+        margin-bottom: 5%;
+    }
+}
 /// Les titres tels que 350-5N1 Communication et dynamique d’une équipe de travail (45h), Projets, etc
 .entry-header, .page-title{
-    margin-left: 5%
+    margin-left: 3%;
 }
 
 .archive-description, .entry-content { /// Description des articles de projets, cours, etc. Exemple : Quelques projets de nos étudiants en technique d'intégration multimédia au Collège de Maisonneuve

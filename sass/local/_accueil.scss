@@ -1,4 +1,4 @@
-
+/// Page d'acceuil
 
 body.home{ /// .home définit que ces règles de styles appartiennent seulement à la page d'accueil
     width : 100vw;
@@ -156,16 +156,22 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
      }
 }
 
+/// La boîte qui affiche les 3 nouvelles
 .home .nouvelles{
     display: flex;
     flex-direction: column;
     margin: 3% 4% 3% 2%;
 
     #bout_nouvelles {
-        background-color: #89b6db;
-        color: #ffffff;
+        background-color: #cbdfbd; 
+        color: #273f35;
         font-size: 1.3rem;
-        
+        box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
+        transition: 0.5s all ease-in-out;
+    }
+    /// Quand l'utilisateur Hover sur le bouton Afficher les 3 dernières nouvelles
+    #bout_nouvelles:hover{
+        background-color: #a0c288;
     }
 
     section{

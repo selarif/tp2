@@ -1286,9 +1286,15 @@ body.home::after {
 }
 
 .home .nouvelles #bout_nouvelles {
-  background-color: #89b6db;
-  color: #ffffff;
+  background-color: #cbdfbd;
+  color: #273f35;
   font-size: 1.3rem;
+  box-shadow: -1px 32px 50px -32px rgba(0, 0, 0, 0.75);
+  transition: 0.5s all ease-in-out;
+}
+
+.home .nouvelles #bout_nouvelles:hover {
+  background-color: #a0c288;
 }
 
 .home .nouvelles section div {
@@ -1674,8 +1680,11 @@ Animation de la dtroisième  barre bar3
   margin-top: 10px;
 }
 
-.page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
+.page-header .page-title, .entry-header .page-title {
   font-size: 4rem;
+}
+
+.page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
   color: #153B50;
   margin-bottom: 0;
   animation-name: slider;
@@ -1692,8 +1701,20 @@ Animation de la dtroisième  barre bar3
   margin: 0;
 }
 
-.entry-header, .page-title {
+.entry-title {
+  font-size: 3rem;
+  margin-top: 70px;
+}
+
+.entry-content p {
+  margin-top: 50px;
   margin-left: 5%;
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.entry-header, .page-title {
+  margin-left: 3%;
 }
 
 .archive-description, .entry-content {
