@@ -1,3 +1,4 @@
+/// Formatte TOUTES les pages
 .site-title{
     font-family: $font__title;
     font-size: clamp(.9rem, #{"-0.875rem + 5.333vw"}, 2.5rem);
@@ -18,10 +19,10 @@
     margin-top: 0;
 }
 
-.page-header{
-    margin-top: 90px;
+.page-header, .entry-header{
+    margin-top: 130px;
 
-    .page-title{
+    .page-title, .entry-title{
         font-size: 4rem;
         color: #153B50;
         margin-bottom: 0;
@@ -36,6 +37,7 @@
         p{
             margin: 0;
         }
+        
     }
 }
 

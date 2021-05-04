@@ -662,6 +662,43 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+/*
+* La différence en ce fichier et le _sidebar-content est dans le grid où il y a ce symbole : **
+*
+*/
+.site {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
+}
+
+@media (min-width: 1200px) {
+  .site {
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
+}
+
+.site-header {
+  grid-area: header;
+  height: 25vh;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+  background-color: rosybrown;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -1632,11 +1669,11 @@ Animation de la dtroisième  barre bar3
   margin-top: 0;
 }
 
-.page-header {
-  margin-top: 90px;
+.page-header, .entry-header {
+  margin-top: 130px;
 }
 
-.page-header .page-title {
+.page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
   font-size: 4rem;
   color: #153B50;
   margin-bottom: 0;
@@ -1645,12 +1682,12 @@ Animation de la dtroisième  barre bar3
   animation-fill-mode: forwards;
 }
 
-.page-header .archive-description {
+.page-header .archive-description, .entry-header .archive-description {
   font-size: 1rem;
   color: #155041;
 }
 
-.page-header .archive-description p {
+.page-header .archive-description p, .entry-header .archive-description p {
   margin: 0;
 }
 
@@ -1689,5 +1726,11 @@ Animation de la dtroisième  barre bar3
 .admin-rapide {
   width: 70%;
   margin: 2% 4% 2% 3%;
+}
+
+/* Local/sidebar
+--------------------------------------------- */
+#secondary {
+  padding-left: 4%;
 }
 /*# sourceMappingURL=style.css.map */

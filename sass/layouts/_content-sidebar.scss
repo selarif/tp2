@@ -4,15 +4,27 @@
 */
 .site {
 	display: grid;
-	grid-template-columns: 80% 20%;
+	grid-template-columns: 100%;
 	grid-template-areas:
 		"header header"
-		"main sidebar" // ** C'est ici que il y a une différence avec _sidebar-content
+		"main main" // ** C'est ici que il y a une différence avec _sidebar-content
+		"sidebar sidebar"
 		"footer footer";
+
+	/// Media Query
+	@include desktop{
+		grid-template-columns: 80% 20%;
+		grid-template-areas:
+			"header header"
+			"main sidebar" // ** C'est ici que il y a une différence avec _sidebar-content
+			"footer footer";
+	}
+	
 }
 
 .site-header {
 	grid-area: header;
+	height : 25vh;
 }
 
 .site-main {
@@ -22,6 +34,7 @@
 
 .widget-area {
 	grid-area: sidebar;
+	background-color: rosybrown;
 }
 
 .site-footer {
