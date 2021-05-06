@@ -8,11 +8,17 @@
     font-weight: bold;
     color : #003;
     margin-bottom: 0;
-    a {
+    a { /// Titre de la page "4W4"
         text-decoration: none;
+        margin-left: 3%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+    }
+    a:active { /// Titre de la page "4W4"
+        transform: scale(0.95); 
     }
    
 }
+
 
 .site-description{
     font-family: $font__title;
@@ -20,6 +26,7 @@
     font-weight: normal;
     color : #003;
     margin-top: 0;
+    margin-left: 3%;
 }
 
 .page-header, .entry-header{
@@ -62,7 +69,7 @@
     }
 }
 /// Les titres tels que 350-5N1 Communication et dynamique d’une équipe de travail (45h), Projets, etc
-.entry-header, .page-title{
+.entry-header{
     margin-left: 3%;
 }
 

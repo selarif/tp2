@@ -76,6 +76,11 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        /// Quand l'utilisateur appuie sur les cases de cours
+        article:active{
+            transform: scale(0.95);
+        }
         article:hover{ // Quand on hover sur les cases de cours
             background-color: #f5e6e2;
             color: #426A5A; 
@@ -99,7 +104,7 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
             margin-right: 1rem;
             margin-bottom: 20px;
             box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
-            transition: 0.5s all ease-in-out;
+            transition: 0.2s all ease-in-out;
             
             p{
                 font-size: .7rem;
