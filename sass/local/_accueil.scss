@@ -150,11 +150,17 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         color: #273f35;
         font-size: 1.3rem;
         box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
-        transition: 0.5s all ease-in-out;
+        transition: 0.1s all ease-in-out;
     }
     /// Quand l'utilisateur Hover sur le bouton Afficher les 3 dernières nouvelles
     #bout_nouvelles:hover{
         background-color: #a0c288;
+        //transform: scale(0.7);
+    }
+    /// Quand l'utilisateur appuie sur le bouton Afficher les 3 dernières nouvelles
+    #bout_nouvelles:active{
+        background-color: #a0c288;
+        transform: scale(0.95);
     }
 
     section{
