@@ -742,6 +742,7 @@ body {
   background-color: #721817;
   text-align: left;
   left: 0;
+  z-index: 1;
   /* sub-menu */
 }
 
@@ -1492,7 +1493,7 @@ body.home::after {
 Bouton burger
 ------------------------------------------------------------------------------ */
 #burger {
-  background: #fff;
+  background: #F2D1C9;
   position: relative;
   width: 2rem;
   height: 2rem;
@@ -1511,17 +1512,17 @@ Bouton burger
 
 #burger div:nth-of-type(1) {
   clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
-  background-color: #b3ff00;
+  background-color: #721817;
 }
 
 #burger div:nth-of-type(2) {
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
-  background-color: #0011ff;
+  background-color: #721817;
 }
 
 #burger div:nth-of-type(3) {
   clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%);
-  background-color: #ff009d;
+  background-color: #721817;
 }
 
 /* -----------------------------------------------------------------------------

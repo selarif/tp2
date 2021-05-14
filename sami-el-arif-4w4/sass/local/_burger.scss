@@ -10,7 +10,7 @@ $epaisseur : 7%;
 Bouton burger
 ------------------------------------------------------------------------------ */
 #burger {
-    background: #fff;
+    background: #F2D1C9;
     position : relative;
     width : $largeur_burger;
     height : $largeur_burger;
@@ -27,18 +27,18 @@ Bouton burger
         &:nth-of-type(1){
           clip-path : polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
           //État final  clip-path : polygon(5% -5%, 105% 95%, 95% 105%, -5% 5%);
-            background-color: rgb(179, 255, 0);
+            background-color: #721817;
         }
         &:nth-of-type(2){
            clip-path : polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
             //clip-path : polygon(50% 45%, 50% 45%, 50% 55%, 50% 55% );
-            background-color: rgb(0, 17, 255);
+            background-color: #721817;
             //z-index :-1;
         }
         &:nth-of-type(3){
           clip-path : polygon(0 75%, 100% 75%, 100% 85%, 0 85%);
         //clip-path : polygon(-5% 95%, 95% -5%, 105% 5%, 5% 105%);   
-            background-color: rgb(255, 0, 157);
+            background-color: #721817;
             
         }
     }
