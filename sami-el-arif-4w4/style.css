@@ -1333,7 +1333,8 @@ body.home::after {
   width: 300vw;
   height: 30vh;
   transition: transform .5s;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .carrousel-2 .slide__conteneur {
@@ -1674,7 +1675,7 @@ Animation de la dtroisième  barre bar3
 }
 
 .galerie .flip-card-back {
-  background-color: #2980b9;
+  background-color: #3e756b;
   color: white;
   transform: rotateY(180deg);
   margin-top: -150px;
@@ -1684,8 +1685,13 @@ Animation de la dtroisième  barre bar3
 }
 
 .galerie .flip-card-back a {
-  color: #d4d2be;
+  color: #BAD1CD;
   font-style: italic;
+  text-decoration: none;
+}
+
+.galerie .flip-card-back a:hover {
+  text-decoration: underline;
 }
 
 /* Local/page

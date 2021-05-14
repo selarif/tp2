@@ -48,7 +48,7 @@
     }
     
     .flip-card-back {
-        background-color: #2980b9;
+        background-color: #3e756b;
         color: white;
         transform: rotateY(180deg); /// Permet de mettre a l'endroit le texte, sinon il serait a l'envers a cause du premier 180deg
 
@@ -56,10 +56,13 @@
         height: 150px;
         width: 150px;
         border-radius: 5px;
-        
         a{
-            color: rgb(212, 210, 190) ;
+            color: #BAD1CD ;
             font-style: italic;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:underline
         }
     }
 
