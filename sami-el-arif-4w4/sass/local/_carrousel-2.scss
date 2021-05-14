@@ -3,9 +3,9 @@
     width : 300vw;
     height : 30vh;
     transition : transform .5s;
-    //flex-wrap: nowrap;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    //flex-direction: row;
+    //flex-wrap: wrap;
     .slide__conteneur{
         width : 50vw;
         display : flex;

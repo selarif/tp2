@@ -1333,8 +1333,7 @@ body.home::after {
   width: 300vw;
   height: 30vh;
   transition: transform .5s;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .carrousel-2 .slide__conteneur {
