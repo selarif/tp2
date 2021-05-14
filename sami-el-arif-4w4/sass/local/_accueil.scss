@@ -181,3 +181,18 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         }
     }
 }
+
+
+/*------------------
+  La section Annonce
+--------------------*/
+#annonce{
+    background-color: #e4b6b5;
+    width: 100vw;
+    h2, p{
+       text-align: center;
+       margin: 0 5% 0 5%;
+       color:#81736e;
+    }
+    
+}

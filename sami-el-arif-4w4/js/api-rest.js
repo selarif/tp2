@@ -2,7 +2,8 @@
     let bouton = document.getElementById('bout_nouvelles');
     let nouvelles = document.querySelector('.nouvelles section');
     let annonce = document.getElementById('annonce');
-    bouton.addEventListener('mousedown', function(){ 
+    window.addEventListener('load', function(){ 
+    //bouton.addEventListener('mousedown', function(){ 
         monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categories=33&order=desc&per_page=3', nouvelles) // On l'appel une premiere fois pour la requete des nouvelles
         monAjax(monObjJS.siteURL + '/wp-json/wp/v2/posts?categories=35&order=desc&per_page=1', annonce) // On l'appel une deuxieme fois pour la requete des annonces
     });

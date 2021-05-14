@@ -1299,6 +1299,20 @@ body.home::after {
   margin-right: 5%;
 }
 
+/*------------------
+  La section Annonce
+--------------------*/
+#annonce {
+  background-color: #e4b6b5;
+  width: 100vw;
+}
+
+#annonce h2, #annonce p {
+  text-align: center;
+  margin: 0 5% 0 5%;
+  color: #81736e;
+}
+
 /* Local/carrousel
 --------------------------------------------- */
 .carrousel {
@@ -1346,6 +1360,7 @@ body.home::after {
 
 .carrousel-2 .slide__conteneur .slide {
   width: 90%;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
