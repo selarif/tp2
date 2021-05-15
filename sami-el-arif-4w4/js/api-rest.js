@@ -37,37 +37,37 @@
         }
         maRequete.send()
     }
-/*--------------------------------------------------------------------------------------
-   Contrôle du formulaire d'édition d'articles de catégorie "Nouvelles" 
---------------------------------------------------------------------------------------*/
-let bout_ajout = document.getElementById('bout-rapide');
-bout_ajout.addEventListener('mousedown', function () { /// On ajoute un écouteur, et on écoute 'mousedown' (clique de souris)
-    console.log('rapide fonctionne');
-    let monArticle = {
-        "title" : document.querySelector('.admin-rapide [name="title"]').value,
-        "content" : document.querySelector('.admin-rapide [name="content"]').value,
-        "status" : "publish",
-        "categories" : [35]
-    }
-    console.log(monArticle);
-    let creerArticle = new XMLHttpRequest();
-    /// Méthdode Post
-    creerArticle.open("POST", monObjJS.siteURL + '/wp-json/wp/v2/posts');
-    creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce);
-    creerArticle.setRequestHeader("Content-Type", "application/json;charset=UTF-8") /// On indique à l'API que se qu'on transfère (le contenu) est du JSON
-    creerArticle.send(JSON.stringify(monArticle)); /// Article (auparavant converti en JSON) sera converti en chaîne de caractères par stringify
-    creerArticle.onreadystatechange = function(){
-        if (creerArticle.readyState == 4){
-            if (creerArticle.status == 201) {
-                document.querySelector('.admin-rapide [name="title"]').value = ''
-                document.querySelector('.admin-rapide [name="content"]').value = ''
-            }
-            else{
-                alert ('erreur vous devez ressayer - status = ' + creerArticle.status)
+    /*--------------------------------------------------------------------------------------
+    Contrôle du formulaire d'édition d'articles de catégorie "Nouvelles" 
+    --------------------------------------------------------------------------------------*/
+    let bout_ajout = document.getElementById('bout-rapide');
+    bout_ajout.addEventListener('mousedown', function () { /// On ajoute un écouteur, et on écoute 'mousedown' (clique de souris)
+        console.log('rapide fonctionne');
+        let monArticle = {
+            "title" : document.querySelector('.admin-rapide [name="title"]').value,
+            "content" : document.querySelector('.admin-rapide [name="content"]').value,
+            "status" : "publish",
+            "categories" : [35]
+        }
+        console.log(monArticle);
+        let creerArticle = new XMLHttpRequest();
+        /// Méthdode Post
+        creerArticle.open("POST", monObjJS.siteURL + '/wp-json/wp/v2/posts');
+        creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce);
+        creerArticle.setRequestHeader("Content-Type", "application/json;charset=UTF-8") /// On indique à l'API que se qu'on transfère (le contenu) est du JSON
+        creerArticle.send(JSON.stringify(monArticle)); /// Article (auparavant converti en JSON) sera converti en chaîne de caractères par stringify
+        creerArticle.onreadystatechange = function(){
+            if (creerArticle.readyState == 4){
+                if (creerArticle.status == 201) {
+                    document.querySelector('.admin-rapide [name="title"]').value = ''
+                    document.querySelector('.admin-rapide [name="content"]').value = ''
+                }
+                else{
+                    alert ('erreur vous devez ressayer - status = ' + creerArticle.status)
+                }
             }
         }
-    }
-}); 
+    }); 
 
 
 }())

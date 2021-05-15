@@ -1763,7 +1763,14 @@ Animation de la dtroisième  barre bar3
 }
 
 /*------------------------------------
+
   LA GALERIE DES PROJETS PERSONNELS
+  
+  - La différence que présente la galerie des projets personnels à la galerie des projets d'anciens étudiants est le fait que les images sont plus larges
+    ont un border-radius plus prononcé. La couleur du flip-card est différente et est plus vibrante, la font-size du lien est plus grosse pour accentuer le 
+    design unique de la page des projets personnels. Le titre a une nouvelle couleur et l'animation se fini plus vers la droite que vers la gauche comme la 
+    page de projet d'anciens étudiants.
+
   ------------------------------------*/
 .galerie2 {
   display: flex;
