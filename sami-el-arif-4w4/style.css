@@ -1725,15 +1725,17 @@ Animation de la dtroisième  barre bar3
 }
 
 .galerie2 img {
-  border-radius: 5px;
+  border-radius: 10px;
   display: block;
+  width: 250px;
+  height: 250px;
 }
 
 .galerie2 .flip-card {
   margin: 2%;
   background-color: transparent;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   perspective: 1000px;
 }
 
@@ -1745,6 +1747,7 @@ Animation de la dtroisième  barre bar3
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .galerie2 .flip-card:hover .flip-card-inner {
@@ -1756,6 +1759,7 @@ Animation de la dtroisième  barre bar3
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .galerie2 .flip-card-front {
@@ -1764,19 +1768,19 @@ Animation de la dtroisième  barre bar3
 }
 
 .galerie2 .flip-card-back {
-  background-color: #3e756b;
+  background-color: #b3aefa;
   color: white;
   transform: rotateY(180deg);
-  margin-top: -150px;
-  height: 150px;
-  width: 150px;
-  border-radius: 5px;
+  margin-top: -250px;
+  height: 250px;
+  width: 250px;
 }
 
 .galerie2 .flip-card-back a {
-  color: #BAD1CD;
+  color: #e4fffb;
   font-style: italic;
   text-decoration: none;
+  font-size: 35px;
 }
 
 .galerie2 .flip-card-back a:hover {
@@ -1825,8 +1829,16 @@ Animation de la dtroisième  barre bar3
   margin-top: 10px;
 }
 
-.page-header .page-title, .entry-header .page-title {
+.page-header .page-title, .page-header .page-title2, .entry-header .page-title, .entry-header .page-title2 {
   font-size: 4rem;
+}
+
+.page-header .page-title2, .entry-header .page-title2 {
+  color: #3e6890;
+  margin-bottom: 0;
+  animation-name: slider2;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
 
 .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
@@ -1852,10 +1864,8 @@ Animation de la dtroisième  barre bar3
 }
 
 .entry-content p {
-  margin-top: 50px;
   margin-left: 5%;
   width: 90%;
-  margin-bottom: 15%;
 }
 
 .entry-header {
@@ -1883,6 +1893,19 @@ Animation de la dtroisième  barre bar3
   }
 }
 
+@keyframes slider2 {
+  0% {
+    transform: translateX(-100%);
+    animation-timing-function: cubic-bezier(0, 1.04, 0.72, 1.01);
+    text-shadow: none;
+  }
+  100% {
+    transform: translateX(50%);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0.81);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
+  }
+}
+
 /* Local/page
 --------------------------------------------- */
 .site-footer {
@@ -1892,6 +1915,7 @@ Animation de la dtroisième  barre bar3
   color: #bbd3c9;
   width: 100vw;
   margin-left: 0;
+  margin-bottom: -500px;
 }
 
 .site-footer .ligne-footer {
@@ -1899,6 +1923,10 @@ Animation de la dtroisième  barre bar3
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
 }
 
 /* Local/formulaire

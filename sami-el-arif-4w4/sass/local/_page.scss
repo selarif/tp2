@@ -32,8 +32,16 @@
 .page-header, .entry-header{
     margin-top: 10px;
 
-    .page-title{
+    .page-title, .page-title2{
         font-size: 4rem;
+    }
+    .page-title2{ /// Le titre de Projets Personnels
+        color: #3e6890;
+        margin-bottom: 0;
+        // L'animation
+        animation-name: slider2;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
     }
     .page-title, .entry-title{
         
@@ -62,10 +70,10 @@
 /// Textes qui décrivent les cours dans leurs pages respectives 
 .entry-content{
     p{
-        margin-top: 50px;
+        //margin-top: 50px;
         margin-left : 5%;  
         width: 90%;
-        margin-bottom: 15%;
+        //margin-bottom: 15%;
     }
 }
 /// Les titres tels que 350-5N1 Communication et dynamique d’une équipe de travail (45h), Projets, etc
@@ -82,7 +90,7 @@
     display: none;
 }
 
-// L'animation du titre Archives 
+// L'animation du titre
 @keyframes slider{
     0%{
         transform: translateX(-100%);
@@ -91,6 +99,20 @@
     }
     100%{ 
         transform: translateX(0px);
+        animation-timing-function: cubic-bezier(1,0,1,.81);
+        text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
+    }
+}
+
+// L'animation du titre
+@keyframes slider2{
+    0%{
+        transform: translateX(-100%);
+        animation-timing-function: cubic-bezier(0,1.04,.72,1.01); 
+        text-shadow: none;
+    }
+    100%{ 
+        transform: translateX(50%);
         animation-timing-function: cubic-bezier(1,0,1,.81);
         text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
     }

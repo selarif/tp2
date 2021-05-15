@@ -93,14 +93,16 @@
     margin-right : 3%;
 
     img{
-        border-radius: 5px;
+        border-radius: 10px;
         display: block;
+        width: 250px;
+        height: 250px;
     }
     .flip-card {
         margin : 2%;
         background-color: transparent;
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
         perspective: 1000px; /// Distance qui separe l'observateur de l'animation
         
     }
@@ -113,6 +115,7 @@
         transition: transform 0.6s;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 10px;
         
     }
     
@@ -127,6 +130,7 @@
         /// veut dire qu'on ne voit pas le backface
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        border-radius: 10px;
     }
     
     .flip-card-front {
@@ -135,18 +139,18 @@
     }
     
     .flip-card-back {
-        background-color: #3e756b;
+        background-color: #b3aefa;
         color: white;
         transform: rotateY(180deg); /// Permet de mettre a l'endroit le texte, sinon il serait a l'envers a cause du premier 180deg
+        margin-top: -250px; /// sinon ca s'affiche en dessous de l'image 
+        height: 250px;
+        width: 250px;
 
-        margin-top: -150px; /// sinon ca s'affiche en dessous de l'image 
-        height: 150px;
-        width: 150px;
-        border-radius: 5px;
         a{
-            color: #BAD1CD ;
+            color: #e4fffb ;
             font-style: italic;
             text-decoration: none;
+            font-size: 35px;
         }
         a:hover{
             text-decoration:underline

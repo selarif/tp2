@@ -5,6 +5,7 @@
     color: #bbd3c9;
     width: 100vw;
     margin-left: 0;
+    margin-bottom: -500px;
 
     .ligne-footer{
         display: flex;
@@ -12,4 +13,9 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
+}
+
+footer{
+    display: flex;
+    //align-items: flex-end; /// Pour que le footer soit toujours au pied de la page et ne flotte pas au dessus de la fin
 }
