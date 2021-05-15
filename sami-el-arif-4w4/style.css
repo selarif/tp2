@@ -1271,7 +1271,7 @@ body.home::after {
   display: flex;
   flex-direction: column;
   margin: 3% 4% 3% 2%;
-  background-color: #f1dfdb;
+  background-color: #dcebd2;
   border-radius: 0 0 40px 40px;
   box-shadow: -1px 32px 50px -32px rgba(0, 0, 0, 0.75);
 }
@@ -1417,18 +1417,8 @@ body.home::after {
     
 }*/
 .carrousel-2 {
-  width: 600vw;
-}
-
-@media (min-width: 1200px) {
-  .carrousel-2 {
-    width: 300vw;
-  }
-}
-
-.carrousel-2 {
   display: flex;
-  height: 50vh;
+  width: 600vw;
   transition: transform .5s;
   flex-wrap: nowrap;
 }
@@ -1436,6 +1426,7 @@ body.home::after {
 @media (min-width: 1200px) {
   .carrousel-2 {
     height: 30vh;
+    width: 300vw;
   }
 }
 
@@ -1576,13 +1567,11 @@ body.home::after {
   background-color: #BAD1CD;
   color: #775e88;
   margin-top: 2vh;
-  margin-left: 10px;
 }
 
 @media (min-width: 1200px) {
   .ctrl-carrousel {
     width: 100vw;
-    margin-left: 10px;
   }
 }
 

@@ -149,7 +149,8 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     display: flex;
     flex-direction: column;
     margin: 3% 4% 3% 2%;
-    background-color: #f1dfdb;
+    background-color: #dcebd2; 
+    
     border-radius: 0 0 40px 40px;
     box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
 
