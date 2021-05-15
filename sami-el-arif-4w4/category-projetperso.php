@@ -22,7 +22,7 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
-			<section class="galerie">
+			<section class="galerie2">
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) :
