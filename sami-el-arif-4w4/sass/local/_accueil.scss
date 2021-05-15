@@ -149,6 +149,9 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     display: flex;
     flex-direction: column;
     margin: 3% 4% 3% 2%;
+    background-color: #f1dfdb;
+    border-radius: 0 0 40px 40px;
+    box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
 
     #bout_nouvelles {
         background-color: #cbdfbd; 
@@ -181,10 +184,12 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         div{
             display: flex;
             align-items: center;
-            width: 100vw;
+            justify-content: center;
+            width: 80vw;
             margin-left: 5%;
-            margin-right: 5%;
             text-align: right;
+            background-color: #f3ebe9;
+            border-radius: 20px;
 
             /// Le contenant de l'image
             div{
