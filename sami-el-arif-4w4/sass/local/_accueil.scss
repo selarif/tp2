@@ -36,7 +36,7 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
 
 
 
-.site-title{
+.site-title{ /// Le titre 4W4
     font-family: $font__title;
     font-size: clamp(.9rem, #{"-0.875rem + 5.333vw"}, 2.5rem);
     font-weight: bold;
@@ -45,7 +45,6 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     a {
         text-decoration: none;
     }
-   
 }
 
 .site-description{
