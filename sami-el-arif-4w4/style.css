@@ -1299,12 +1299,17 @@ body.home::after {
   margin-right: 5%;
 }
 
-/*------------------
+/*--------------------------------------------
   La section Annonce
---------------------*/
+----------------------------------------------*/
 #annonce {
   background-color: #e4b6b5;
   width: 100vw;
+  animation: annonce 3s;
+  transition: transform 0.5s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 #annonce h2, #annonce p {
@@ -1315,6 +1320,27 @@ body.home::after {
 
 #annonce p {
   padding-bottom: 10px;
+}
+
+/*--------------------------------
+  L'animation d'Annonce
+  --------------------------------*/
+@keyframes annonce {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  25% {
+    transform: rotateX(-40deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotateX(40deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
 }
 
 /* Local/carrousel

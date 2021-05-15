@@ -106,6 +106,7 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
             box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
             transition: 0.2s all ease-in-out;
             
+            
             p{
                 font-size: .7rem;
                 font-weight: bold;
@@ -183,12 +184,18 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
 }
 
 
-/*------------------
+/*--------------------------------------------
   La section Annonce
---------------------*/
+----------------------------------------------*/
 #annonce{
     background-color: #e4b6b5;
     width: 100vw;
+    animation: annonce 3s;
+    transition: transform 0.5s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
     h2, p{
        text-align: center;
        margin: 0 5% 0 5%;
@@ -199,3 +206,13 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     }
     
 }
+
+/*--------------------------------
+  L'animation d'Annonce
+  --------------------------------*/
+  @keyframes annonce {
+    0% { transform: rotateX(90deg); opacity: 0 }
+    25%{ transform: rotateX(-40deg); opacity: 1 }
+    75%{ transform: rotateX(40deg); }
+    100% { transform: rotateX(0deg); opacity: 1}
+}  
