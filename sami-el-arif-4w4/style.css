@@ -1302,9 +1302,10 @@ body.home::after {
   width: 100vw;
   margin-left: 5%;
   margin-right: 5%;
+  text-align: right;
 }
 
-.home .nouvelles img {
+.home .nouvelles section div div img {
   border-radius: 5px;
   width: 20vw;
 }
@@ -1350,6 +1351,18 @@ body.home::after {
   100% {
     transform: rotateX(0deg);
     opacity: 1;
+  }
+}
+
+/*--------------------------------
+  L'animation des images dans Nouvelles
+  --------------------------------*/
+@keyframes nouvelles {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
   }
 }
 

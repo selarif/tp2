@@ -172,25 +172,35 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
 
     /// La section affichant les articles
     section{
+        /// Le titre des Nouvelles. Ex: Nouvelle 1, Nouvelle 2
         h2{
             padding-top: 50px;
             padding-bottom: -10px;
         }
 
+        /// L'entiereté de la nouvelle (contient le texte et l'image)
         div{
             display: flex;
             align-items: center;
             width: 100vw;
             margin-left: 5%;
             margin-right: 5%;
-            
+            text-align: right;
+
+            /// Le contenant de l'image
+            div{
+
+                
+                img{
+                    border-radius: 5px;
+                    width: 20vw;
+                }
+            }// Fin de la div de l'image   
         }
+        
     }
 
-    img{
-        border-radius: 5px;
-        width: 20vw;
-    }
+    
 }
 
 
@@ -225,4 +235,13 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     25%{ transform: rotateX(-40deg); opacity: 1 }
     75%{ transform: rotateX(40deg); }
     100% { transform: rotateX(0deg); opacity: 1}
+}  
+
+/*--------------------------------
+  L'animation des images dans Nouvelles
+  --------------------------------*/
+  @keyframes nouvelles {
+    0% { transform: rotateY(90deg); }
+    
+    100% { transform: rotateY(0deg);}
 }  

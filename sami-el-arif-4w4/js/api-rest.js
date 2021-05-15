@@ -53,7 +53,7 @@ bout_ajout.addEventListener('mousedown', function () { /// On ajoute un écouteu
     let creerArticle = new XMLHttpRequest();
     /// Méthdode Post
     creerArticle.open("POST", monObjJS.siteURL + '/wp-json/wp/v2/posts');
-    creerArticle.setRequestHeader("X-WP-Nounce", monObjJS.nonce);
+    creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce);
     creerArticle.setRequestHeader("Content-Type", "application/json;charset=UTF-8") /// On indique à l'API que se qu'on transfère (le contenu) est du JSON
     creerArticle.send(JSON.stringify(monArticle)); /// Article (auparavant converti en JSON) sera converti en chaîne de caractères par stringify
     creerArticle.onreadystatechange = function(){
