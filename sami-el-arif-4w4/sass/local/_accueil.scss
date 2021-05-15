@@ -157,6 +157,7 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         font-size: 1.3rem;
         box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
         transition: 0.1s all ease-in-out;
+        border: none;
     }
     /// Quand l'utilisateur Hover sur le bouton Afficher les 3 dernières nouvelles
     #bout_nouvelles:hover{

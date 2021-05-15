@@ -1,12 +1,34 @@
 .admin-rapide {
-    width: 70%;
+    width: 90vw;
     margin: 2% 4% 2% 3%;
 
-    input {
-        margin-bottom: 5px
+    h3{
+        color:#486d5e;
+        font-size: 1.3rem;
     }
-    input, textarea {
+
+    input { /// L'endroit où l'utilisateur écrit le titre de sa nouvelle
+        margin-bottom: 7px;
+        width: 50%;
+    }
+    input, textarea { /// L'endroit où l'utilisateur écrit le titre et le paragraphe de sa nouvelle 
         background-color: #faede9;
         border: none;
+    }
+    #bout-rapide{
+        background-color: #60907d;
+        border: none;
+        border-radius: 5px;
+        color : #d8ece9;
+        padding: 10px;
+        transition: 0.1s all ease-in-out;
+    }
+    #bout-rapide:hover{
+        background-color: #476d5e;
+    }
+    #bout-rapide:active{
+        color: #60907d;
+        background-color : #d8ece9;
+        transform: scale(0.95);
     }
 }

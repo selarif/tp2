@@ -1279,6 +1279,7 @@ body.home::after {
   font-size: 1.3rem;
   box-shadow: -1px 32px 50px -32px rgba(0, 0, 0, 0.75);
   transition: 0.1s all ease-in-out;
+  border: none;
 }
 
 .home .nouvelles #bout_nouvelles:hover {
@@ -1958,17 +1959,42 @@ footer {
 /* Local/formulaire
 --------------------------------------------- */
 .admin-rapide {
-  width: 70%;
+  width: 90vw;
   margin: 2% 4% 2% 3%;
 }
 
+.admin-rapide h3 {
+  color: #486d5e;
+  font-size: 1.3rem;
+}
+
 .admin-rapide input {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  width: 50%;
 }
 
 .admin-rapide input, .admin-rapide textarea {
   background-color: #faede9;
   border: none;
+}
+
+.admin-rapide #bout-rapide {
+  background-color: #60907d;
+  border: none;
+  border-radius: 5px;
+  color: #d8ece9;
+  padding: 10px;
+  transition: 0.1s all ease-in-out;
+}
+
+.admin-rapide #bout-rapide:hover {
+  background-color: #476d5e;
+}
+
+.admin-rapide #bout-rapide:active {
+  color: #60907d;
+  background-color: #d8ece9;
+  transform: scale(0.95);
 }
 
 /* Local/sidebar
