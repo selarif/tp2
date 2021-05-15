@@ -1291,13 +1291,22 @@ body.home::after {
   transform: scale(0.95);
 }
 
+.home .nouvelles section h2 {
+  padding-top: 50px;
+  padding-bottom: -10px;
+}
+
 .home .nouvelles section div {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   width: 100vw;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.home .nouvelles img {
+  border-radius: 5px;
+  width: 20vw;
 }
 
 /*--------------------------------------------
@@ -1964,8 +1973,9 @@ footer {
 }
 
 .admin-rapide h3 {
-  color: #486d5e;
-  font-size: 1.3rem;
+  color: #6ba08b;
+  font-size: 1.7rem;
+  margin-bottom: 5px;
 }
 
 .admin-rapide input {

@@ -170,17 +170,26 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
         transform: scale(0.95);
     }
 
+    /// La section affichant les articles
     section{
-        
+        h2{
+            padding-top: 50px;
+            padding-bottom: -10px;
+        }
+
         div{
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
             width: 100vw;
             margin-left: 5%;
             margin-right: 5%;
             
         }
+    }
+
+    img{
+        border-radius: 5px;
+        width: 20vw;
     }
 }
 
