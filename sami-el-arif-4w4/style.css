@@ -1310,10 +1310,16 @@ body.home::after {
   align-items: center;
   justify-content: center;
   width: 80vw;
-  margin-left: 5%;
-  text-align: right;
+  margin: 5%;
   background-color: #f3ebe9;
   border-radius: 20px;
+  text-align: justify;
+}
+
+@media (min-width: 1200px) {
+  .home .nouvelles section div {
+    text-align: right;
+  }
 }
 
 .home .nouvelles section div div img {

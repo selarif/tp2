@@ -154,8 +154,6 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
     box-shadow: -1px 32px 50px -32px rgba(0,0,0,0.75);
     @include desktop {
         margin: 3% 4% 3% 2%;
-    
-        
     }
 
     #bout_nouvelles {
@@ -191,10 +189,13 @@ body.home::after { // -- Ajouter la barre Diagonale (Clip-Path)
             align-items: center;
             justify-content: center;
             width: 80vw;
-            margin-left: 5%;
-            text-align: right;
+            margin: 5%;
             background-color: #f3ebe9;
             border-radius: 20px;
+            text-align: justify;
+            @include desktop {
+                text-align: right;
+            }
 
             /// Le contenant de l'image
             div{
