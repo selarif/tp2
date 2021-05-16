@@ -1952,9 +1952,19 @@ Animation de la dtroisième  barre bar3
 .page-header .page-title2, .entry-header .page-title2 {
   color: #3e6890;
   margin-bottom: 0;
-  animation-name: slider2;
+  animation-name: slider3;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .page-header .page-title2, .entry-header .page-title2 {
+    animation-name: slider2;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    text-align: left;
+  }
 }
 
 .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
@@ -2017,6 +2027,19 @@ Animation de la dtroisième  barre bar3
   }
   100% {
     transform: translateX(50%);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0.81);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
+  }
+}
+
+@keyframes slider3 {
+  0% {
+    transform: translateX(-100%);
+    animation-timing-function: cubic-bezier(0, 1.04, 0.72, 1.01);
+    text-shadow: none;
+  }
+  100% {
+    transform: translateX(0);
     animation-timing-function: cubic-bezier(1, 0, 1, 0.81);
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.45);
   }

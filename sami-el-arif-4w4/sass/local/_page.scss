@@ -39,9 +39,17 @@
         color: #3e6890;
         margin-bottom: 0;
         // L'animation
-        animation-name: slider2;
+        animation-name: slider3;
         animation-duration: 2.5s;
         animation-fill-mode: forwards;
+        text-align: center;
+        @include desktop {
+            // L'animation
+            animation-name: slider2;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+            text-align:left;
+        }
     }
     .page-title, .entry-title{
         
@@ -113,6 +121,20 @@
     }
     100%{ 
         transform: translateX(50%);
+        animation-timing-function: cubic-bezier(1,0,1,.81);
+        text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
+    }
+}
+
+// L'animation du titre en mode mobile
+@keyframes slider3{
+    0%{
+        transform: translateX(-100%);
+        animation-timing-function: cubic-bezier(0,1.04,.72,1.01); 
+        text-shadow: none;
+    }
+    100%{ 
+        transform: translateX(0);
         animation-timing-function: cubic-bezier(1,0,1,.81);
         text-shadow: 4px 4px 12px rgba(0,0,0,0.45);
     }
