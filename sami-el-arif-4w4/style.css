@@ -681,7 +681,7 @@ textarea {
 
 .site-header {
   grid-area: header;
-  height: 33vh;
+  height: 30vh;
 }
 
 .site-main {
@@ -1270,10 +1270,16 @@ body.home::after {
 .home .nouvelles {
   display: flex;
   flex-direction: column;
-  margin: 3% 4% 3% 2%;
+  margin: 0;
   background-color: #dcebd2;
   border-radius: 0 0 40px 40px;
   box-shadow: -1px 32px 50px -32px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1200px) {
+  .home .nouvelles {
+    margin: 3% 4% 3% 2%;
+  }
 }
 
 .home .nouvelles #bout_nouvelles {
