@@ -25,6 +25,10 @@
 .site-header {
 	grid-area: header;
 	height : 30vh;
+	@mixin grand_desktop {
+		height: 0vh
+	}
+	
 }
 
 .site-main {
