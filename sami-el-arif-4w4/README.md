@@ -1,6 +1,6 @@
 # Travail Pratique 2 #
 ## Auteur : Sami El Arif ##
-## Groupe : ## Groupe 1 - Mardi,Vendredi 
+## Groupe : Groupe 1 ## 
 ## Description ##
 
 L'aboutissement du développement d'un site WordPress fait en 14 semaines.
