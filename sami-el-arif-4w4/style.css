@@ -681,7 +681,7 @@ textarea {
 
 .site-header {
   grid-area: header;
-  height: 30vh;
+  height: 35vh;
 }
 
 .site-main {
